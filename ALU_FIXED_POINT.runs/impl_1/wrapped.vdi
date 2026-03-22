@@ -1,0 +1,1629 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Jan  7 15:41:51 2026
+# Process ID         : 9212
+# Current directory  : C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1
+# Command line       : vivado.exe -log wrapped.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source wrapped.tcl -notrace
+# Log file           : C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1/wrapped.vdi
+# Journal file       : C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-PLH30OIJ
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 6600HS Creator Edition             
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14702 MB
+# Swap memory        : 14789 MB
+# Total Virtual      : 29491 MB
+# Available Virtual  : 4365 MB
+#-----------------------------------------------------------
+source wrapped.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 593.895 ; gain = 219.398
+Command: link_design -top wrapped -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 851.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 284 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'wrapped' is not ideal for floorplanning, since the cellview 'div_unit' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/PTNgoc/Downloads/Arty-Z7-20-Master.xdc]
+Finished Parsing XDC File [C:/Users/PTNgoc/Downloads/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 992.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 992.480 ; gain = 398.586
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1011.375 ; gain = 18.895
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1bef2dde2
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1505.844 ; gain = 494.469
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1bef2dde2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1965.324 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1bef2dde2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1965.324 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1bef2dde2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1965.324 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1bef2dde2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1965.344 ; gain = 0.020
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1bef2dde2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.155 . Memory (MB): peak = 1965.344 ; gain = 0.020
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1bef2dde2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.159 . Memory (MB): peak = 1965.344 ; gain = 0.020
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1bef2dde2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.160 . Memory (MB): peak = 1965.344 ; gain = 0.020
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1a4746304
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.307 . Memory (MB): peak = 1965.344 ; gain = 0.020
+Retarget | Checksum: 1a4746304
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 23 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1950ba502
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.336 . Memory (MB): peak = 1965.344 ; gain = 0.020
+Constant propagation | Checksum: 1950ba502
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1a4e839ce
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.405 . Memory (MB): peak = 1965.344 ; gain = 0.020
+Sweep | Checksum: 1a4e839ce
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1a4e839ce
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.449 . Memory (MB): peak = 1965.344 ; gain = 0.020
+BUFG optimization | Checksum: 1a4e839ce
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1a4e839ce
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.456 . Memory (MB): peak = 1965.344 ; gain = 0.020
+Shift Register Optimization | Checksum: 1a4e839ce
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1a4e839ce
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.464 . Memory (MB): peak = 1965.344 ; gain = 0.020
+Post Processing Netlist | Checksum: 1a4e839ce
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 156352de8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.565 . Memory (MB): peak = 1965.344 ; gain = 0.020
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 156352de8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.579 . Memory (MB): peak = 1965.344 ; gain = 0.020
+Phase 9 Finalization | Checksum: 156352de8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.579 . Memory (MB): peak = 1965.344 ; gain = 0.020
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |              23  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 156352de8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.583 . Memory (MB): peak = 1965.344 ; gain = 0.020
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 156352de8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 156352de8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1965.344 ; gain = 972.863
+INFO: [Vivado 12-24828] Executing command : report_drc -file wrapped_drc_opted.rpt -pb wrapped_drc_opted.pb -rpx wrapped_drc_opted.rpx
+Command: report_drc -file wrapped_drc_opted.rpt -pb wrapped_drc_opted.pb -rpx wrapped_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1/wrapped_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1/wrapped_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 58dad6b2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f2604bc2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.372 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 17bd0af7f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 17bd0af7f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 17bd0af7f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 15b714960
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1622d5c63
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1622d5c63
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 1357b9c6c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1d0b1447c
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 5 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 2 nets or LUTs. Breaked 0 LUT, combined 2 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |              2  |                     2  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |              2  |                     2  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 2153f89b2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 1cd984b3f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1cd984b3f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1cc94da2c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 20798c260
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 17a4e90ff
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 21eaebef5
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1a13a7453
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1b1d45e70
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 19c1383ad
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 287b3b1b7
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1e3f13e28
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1e3f13e28
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: ed444151
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-81.345 | TNS=-1295.724 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1723545e9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 1a891f1b3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: ed444151
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-79.551. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 13c481723
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 13c481723
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 13c481723
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 13c481723
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 13c481723
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 15f2d2813
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Ending Placer Task | Checksum: c79bcb16
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1965.344 ; gain = 0.000
+72 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:34 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file wrapped_utilization_placed.rpt -pb wrapped_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file wrapped_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_io -file wrapped_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1/wrapped_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.312 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 1.00s |  WALL: 0.34s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.551 | TNS=-1266.802 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1bb7f7e78
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.311 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.551 | TNS=-1266.802 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1bb7f7e78
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.360 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.551 | TNS=-1266.802 |
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[15]_0[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net B_in_reg_n_0_[4]. Replicated 6 times.
+INFO: [Physopt 32-735] Processed net B_in_reg_n_0_[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.542 | TNS=-1266.607 |
+INFO: [Physopt 32-81] Processed net B_in_reg_n_0_[0]. Replicated 5 times.
+INFO: [Physopt 32-735] Processed net B_in_reg_n_0_[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.535 | TNS=-1266.473 |
+INFO: [Physopt 32-81] Processed net B_in_reg_n_0_[4]_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net B_in_reg_n_0_[4]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.532 | TNS=-1266.425 |
+INFO: [Physopt 32-81] Processed net B_in_reg_n_0_[4]_repN_6. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net B_in_reg_n_0_[4]_repN_6. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.522 | TNS=-1266.264 |
+INFO: [Physopt 32-81] Processed net B_in_reg_n_0_[0]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net B_in_reg_n_0_[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.520 | TNS=-1266.233 |
+INFO: [Physopt 32-81] Processed net B_in_reg_n_0_[0]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net B_in_reg_n_0_[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.519 | TNS=-1266.216 |
+INFO: [Physopt 32-81] Processed net B_in_reg_n_0_[4]_repN_7. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net B_in_reg_n_0_[4]_repN_7. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.513 | TNS=-1266.120 |
+INFO: [Physopt 32-81] Processed net B_in_reg_n_0_[0]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net B_in_reg_n_0_[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.495 | TNS=-1265.832 |
+INFO: [Physopt 32-702] Processed net B_in_reg_n_0_[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[12]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[8]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[4]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/p_0_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1176_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1175_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1174_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1173_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1172_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1171_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1170_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1170_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1168_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1167_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1165_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1164_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1163_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1162_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1160_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1157_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1156_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1154_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1154_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1152_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1151_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1150_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1149_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1148_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1147_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1146_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1146_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1144_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1143_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1142_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1141_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1139_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1138_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1136_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1134_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1133_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1132_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1131_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1130_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1130_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1128_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1127_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1126_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1125_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1124_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1122_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1122_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1119_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1118_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1117_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1116_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1115_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1114_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1114_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1112_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1111_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1109_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1108_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1107_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1106_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1102_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1101_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1100_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1099_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1098_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1098_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1096_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1095_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1094_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1093_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1092_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1091_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1090_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1090_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1088_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1087_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1086_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1085_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1084_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1083_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1082_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1082_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1080_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1079_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1078_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1077_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1076_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1075_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1074_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1074_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1072_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1071_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1070_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1069_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1068_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1067_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1066_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1066_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1064_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1063_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1062_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1061_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1060_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1059_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1058_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1058_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1056_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1055_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1054_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1053_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1052_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1051_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1050_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1050_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1049_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1048_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1047_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1046_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1045_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1044_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1043_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1042_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1042_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1041_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1040_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1039_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1038_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1037_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1036_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1035_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1034_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1034_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1033_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1032_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1031_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1030_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1029_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1028_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1027_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1026_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1026_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1025_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1024_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1023_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1022_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1021_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1020_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1019_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1018_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1018_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1017_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1015_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1014_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1013_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1012_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1011_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1010_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1010_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1009_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1008_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1007_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1006_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1005_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1003_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1002_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1002_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1001_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1000_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__999_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__998_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__997_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__996_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__995_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__994_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__994_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__993_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__992_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__990_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__989_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__988_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__987_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__986_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_alu/u_algorithm/u_div/y1__986_i_5_n_0.  Re-placed instance u_alu/u_algorithm/u_div/y1__986_i_5
+INFO: [Physopt 32-735] Processed net u_alu/u_algorithm/u_div/y1__986_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.379 | TNS=-1263.977 |
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__986_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__985_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__984_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__983_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__982_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__981_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__980_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__979_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__978_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__978_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__977_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__976_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__975_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__974_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__973_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__972_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__971_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__970_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__970_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__969_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__968_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__967_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__966_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__965_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__964_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__963_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__962_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__962_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__961_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__960_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__959_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__958_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__957_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__956_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__955_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__954_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_alu/u_algorithm/u_div/y1__954_i_5_n_0.  Re-placed instance u_alu/u_algorithm/u_div/y1__954_i_5
+INFO: [Physopt 32-735] Processed net u_alu/u_algorithm/u_div/y1__954_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.365 | TNS=-1263.753 |
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__954_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__953_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__952_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__951_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__950_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__949_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__947_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__946_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__946_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__945_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__944_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__943_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__942_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__941_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__940_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__939_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__938_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__938_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__937_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__936_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__935_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__934_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__933_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__932_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 19 pins.
+INFO: [Physopt 32-735] Processed net u_alu/u_algorithm/u_div/y1__932_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.115 | TNS=-1259.752 |
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__931_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__930_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__930_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__929_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__928_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__927_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__926_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__926_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__925_i_9_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y[14]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[15]_0[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net B_in_reg_n_0_[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/p_0_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1170_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1162_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1154_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1146_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1130_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1122_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1114_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1106_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1098_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1090_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1082_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1074_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1066_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1058_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1050_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1049_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1042_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1041_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1034_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1033_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1026_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1025_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1018_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1017_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1010_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1009_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1002_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1001_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__994_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__993_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__986_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__985_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__978_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__977_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__970_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__969_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__962_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__961_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__954_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__953_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__946_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__945_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__938_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__937_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__930_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__929_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__926_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__925_i_9_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y[14]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.115 | TNS=-1259.752 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 1bb7f7e78
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.115 | TNS=-1259.752 |
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[15]_0[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net B_in_reg_n_0_[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[12]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[8]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[4]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/p_0_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1176_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1175_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1174_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1173_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1172_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1171_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1170_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1170_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1168_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1167_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1165_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1164_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1163_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1162_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1162_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1160_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1159_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1158_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1157_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1156_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1154_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1154_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1152_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1151_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1150_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1149_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1148_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1147_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1146_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1146_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1144_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1143_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1142_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1141_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1139_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1138_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1136_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1134_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1133_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1132_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1131_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1130_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1130_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1128_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1127_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1126_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1125_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1124_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1122_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1122_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1119_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1118_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1117_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1116_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1115_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1114_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1114_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1112_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1111_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1109_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1108_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1107_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1106_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1102_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1101_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1100_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1099_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1098_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1098_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1096_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1095_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1094_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1093_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1092_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1091_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1090_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1090_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1088_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1087_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1086_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1085_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1084_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1083_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1082_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1082_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1080_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1079_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1078_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1077_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1076_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1075_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1074_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1074_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1072_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1071_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1070_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1069_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1068_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1067_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1066_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1066_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1064_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1063_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1062_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1061_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1060_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1059_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1058_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1058_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1056_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1055_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1054_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1053_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1052_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1051_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1050_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1050_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1049_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1048_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1047_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1046_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1045_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1044_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1043_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1042_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1042_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1041_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1040_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1039_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1038_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1037_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1036_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1035_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1034_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1034_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1033_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1032_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1031_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1030_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1029_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1028_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1027_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1026_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1026_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1025_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1024_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1023_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1022_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1021_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1020_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1019_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1018_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1018_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1017_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1015_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1014_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1013_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1012_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1011_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1010_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1010_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1009_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1008_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1007_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1006_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1005_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1003_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1002_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1002_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1001_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1000_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__999_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__998_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__997_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__996_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__995_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__994_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__994_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__993_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__992_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__991_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__990_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__989_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__988_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__987_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__986_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__986_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__985_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__984_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__983_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__982_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__981_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__980_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__979_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__978_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__978_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__977_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__976_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__975_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__974_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__973_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__972_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__971_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__970_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__970_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__969_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__968_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__967_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__966_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__965_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__964_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__963_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__962_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__962_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__961_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__960_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__959_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__958_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__957_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__956_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__955_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__954_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__954_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__953_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__952_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__951_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__950_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__949_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__947_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__946_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__946_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__945_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__944_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__943_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__942_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__941_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__940_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__939_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__938_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__938_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__937_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__936_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__935_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__934_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__933_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__932_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__931_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__930_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__930_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__929_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__928_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__927_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__926_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__926_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__925_i_9_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y[14]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y_reg[15]_0[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net B_in_reg_n_0_[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/p_0_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1170_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1162_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1154_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1146_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1130_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1122_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1114_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1106_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1098_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1090_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1082_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1074_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1066_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1058_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y10_in[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1050_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1049_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1042_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1041_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1034_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1033_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1026_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1025_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1018_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1017_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1010_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1009_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1002_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__1001_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__994_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__993_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__986_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__985_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__978_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__977_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__970_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__969_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__962_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__961_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__954_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__953_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__946_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__945_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__938_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__937_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__930_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__929_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__926_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y1__925_i_9_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y20_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net u_alu/u_algorithm/u_div/y[14]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-79.115 | TNS=-1259.752 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 1bb7f7e78
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-79.115 | TNS=-1259.752 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.436  |          7.049  |           20  |              0  |                    11  |           0  |           2  |  00:00:13  |
+|  Total          |          0.436  |          7.049  |           20  |              0  |                    11  |           0  |           3  |  00:00:13  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 221a189d4
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+864 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.166 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1/wrapped_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: b4611536 ConstDB: 0 ShapeSum: b4b4e172 RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: e026b407 | NumContArr: 2febcb00 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 295647441
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 295647441
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 295647441
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 1965.344 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 17a801dfd
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-76.718| TNS=-1221.369| WHS=-0.127 | THS=-1.940 |
+
+
+Phase 2.4 Soft Constraint Pins - Fast Budgeting
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 1bf667c42
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1453
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1453
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1bf667c42
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 1bf667c42
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 28d491b38
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 4 Initial Routing | Checksum: 28d491b38
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 628
+ Number of Nodes with overlaps = 127
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-80.991| TNS=-1476.943| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 1dab4cb2f
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:34 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 164
+ Number of Nodes with overlaps = 50
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-81.066| TNS=-1476.983| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 2064b7b14
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:36 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 5 Rip-up And Reroute | Checksum: 2064b7b14
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:36 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 26787a9ae
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:37 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-80.991| TNS=-1476.943| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 1a1b40504
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:42 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 1a1b40504
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:42 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 6 Delay and Skew Optimization | Checksum: 1a1b40504
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:42 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-80.988| TNS=-1442.154| WHS=0.195  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 147913511
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:42 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Phase 7 Post Hold Fix | Checksum: 147913511
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:42 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.984985 %
+  Global Horizontal Routing Utilization  = 0.416075 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 44.1441%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 63.964%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 35.2941%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 58.8235%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 147913511
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:42 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 147913511
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:42 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1e466c704
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:43 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 1e466c704
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:43 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-80.988| TNS=-1442.154| WHS=0.195  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 12 Post Router Timing | Checksum: 1e466c704
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:43 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Total Elapsed time in route_design: 42.725 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 16cc845f3
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:43 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 16cc845f3
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:43 . Memory (MB): peak = 1965.344 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+879 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:43 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_drc -file wrapped_drc_routed.rpt -pb wrapped_drc_routed.pb -rpx wrapped_drc_routed.rpx
+Command: report_drc -file wrapped_drc_routed.rpt -pb wrapped_drc_routed.pb -rpx wrapped_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1/wrapped_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file wrapped_methodology_drc_routed.rpt -pb wrapped_methodology_drc_routed.pb -rpx wrapped_methodology_drc_routed.rpx
+Command: report_methodology -file wrapped_methodology_drc_routed.rpt -pb wrapped_methodology_drc_routed.pb -rpx wrapped_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1/wrapped_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file wrapped_timing_summary_routed.rpt -pb wrapped_timing_summary_routed.pb -rpx wrapped_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file wrapped_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file wrapped_route_status.rpt -pb wrapped_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file wrapped_power_routed.rpt -pb wrapped_power_summary_routed.pb -rpx wrapped_power_routed.rpx
+Command: report_power -file wrapped_power_routed.rpt -pb wrapped_power_summary_routed.pb -rpx wrapped_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+896 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file wrapped_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file wrapped_bus_skew_routed.rpt -pb wrapped_bus_skew_routed.pb -rpx wrapped_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1965.344 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 1965.344 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PTNgoc/DA_TKLL_ALU_FIXED_POINT/ALU_FIXED_POINT.runs/impl_1/wrapped_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  7 15:44:01 2026...
